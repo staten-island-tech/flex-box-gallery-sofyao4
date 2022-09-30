@@ -6,10 +6,20 @@ html,body,* {
     font-family: 'Dosis', sans-serif;
     font-family: 'Signika Negative', sans-serif;
 }
-
-.imagecard, .image {
+.list {
     font-size: 4rem;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
 
+}
+.item
+{
+    background-color: aqua;
+    padding: 5rem;
+    width: 10rem;
+    text-align: center;
+margin: 3rem;
+    height: 10rem;
 }
