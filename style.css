@@ -1,4 +1,5 @@
-html,body,* {
+html,body,* 
+{
     padding: 0;
     margin: 0;
     font-size: 62.5%;
@@ -7,27 +8,48 @@ html,body,* {
     font-family: 'Signika Negative', sans-serif;
 }
 
-.contents {
+.main-header 
+{
+    height: 97%;
+    width: 100%;
+    background-color: rgb(209, 227, 243);
+
+    text-align: center;
+    font-size: 8rem;
+    padding: 10rem;
+}
+
+
+.contents
+{
     font-size: 4rem;
     max-width: 100%;
-    max-height: 100%;
+
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     margin: 0 auto;
-    
+    background-color: rgb(211, 234, 253);
+    }
 
+    img {
+        width: 45rem;
+        height: auto;
+        margin: -15rem;
+        border-radius: 2rem;
 
-
-}
+    }
 .item
 {
     border-radius: 9rem;
-    background-color: aqua;
-    width: 40rem;
+    background-color:lightblue ;
+    width: 45rem;
     text-align: center;
-    padding: 14rem;
-    min-width: 40rem;
-    margin: 7rem;
-    align-items: center;
+    padding: 17rem;
+    min-width: 45rem;
+    max-height: 20rem;
+    margin: 5rem;
+    box-shadow: 1rem 1rem rgb(124, 158, 169);
+
+
 }
