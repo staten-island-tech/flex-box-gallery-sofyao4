@@ -4,21 +4,27 @@ html,body,*
     margin: 0;
     font-size: 62.5%;
     box-sizing: border-box;
-    font-family: 'Dosis', sans-serif;
     font-family: 'Signika Negative', sans-serif;
+    color: #4f2100;
 }
 
 .main-header 
 {
-    height: 97%;
+    height: 92%;
     width: 100%;
-    background-color: rgb(209, 227, 243);
-
+    background-color: #DF8B46;
     text-align: center;
     font-size: 8rem;
-    padding: 10rem;
+    padding-top: 20rem;
+    background-image: linear-gradient(#DF8B46,#BE5f1b);
 }
-
+#sub-header {
+    padding-top: 10%;
+    size: 10em;
+}
+h3 {
+    font-size: 3rem;
+}
 
 .contents
 {
@@ -29,27 +35,26 @@ html,body,*
     justify-content: space-around;
     flex-wrap: wrap;
     margin: 0 auto;
-    background-color: rgb(211, 234, 253);
-    }
+    background-color: #BE5f1b;
+    flex-direction: row;
+}
 
-    img {
-        width: 45rem;
-        height: auto;
-        margin: -15rem;
-        border-radius: 2rem;
+img {
+    border-radius: 4rem;
+    width: 50rem;
+    height: 42rem;
+    object-fit: cover;
 
-    }
-.item
-{
-    border-radius: 9rem;
-    background-color:lightblue ;
+}
+
+.item {
+    border-radius: 4rem;
+    background-color:#d67947 ;
     width: 45rem;
     text-align: center;
-    padding: 17rem;
-    min-width: 45rem;
-    max-height: 20rem;
+    padding-bottom: 42rem;
+    min-width: 50rem;
+    max-height: 42rem;
     margin: 5rem;
-    box-shadow: 1rem 1rem rgb(124, 158, 169);
-
-
+    box-shadow: 1rem 1rem #883a19;
 }
