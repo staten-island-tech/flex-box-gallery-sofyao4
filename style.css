@@ -5,9 +5,11 @@ html,body,*
     font-size: 62.5%;
     box-sizing: border-box;
     font-family: 'Signika Negative', sans-serif;
+
+}
+body {
     color: #4f2100;
 }
-
 .main-header 
 {
     height: 92%;
@@ -57,4 +59,10 @@ img {
     max-height: 42rem;
     margin: 5rem;
     box-shadow: 1rem 1rem #883a19;
+}
+.item:hover {
+    transform: scale(1.2);
+}
+.cookies:hover {
+
 }
