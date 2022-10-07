@@ -1,15 +1,15 @@
-html,body,* 
-{
+html,body,* {
     padding: 0;
     margin: 0;
     font-size: 62.5%;
     box-sizing: border-box;
     font-family: 'Signika Negative', sans-serif;
-
 }
+
 body {
     color: #4f2100;
 }
+
 .main-header 
 {
     height: 92%;
@@ -20,8 +20,9 @@ body {
     padding-top: 20rem;
     background-image: linear-gradient(#DF8B46,#BE5f1b);
 }
+
 #sub-header {
-    padding-top: 10%;
+    padding-top: 2%;
     size: 10em;
 }
 h3 {
@@ -32,11 +33,9 @@ h3 {
 {
     font-size: 4rem;
     max-width: 100%;
-
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: 0 auto;
     background-color: #BE5f1b;
     flex-direction: row;
 }
@@ -46,7 +45,6 @@ img {
     width: 50rem;
     height: 42rem;
     object-fit: cover;
-
 }
 
 .item {
@@ -63,95 +61,11 @@ img {
     position: relative;
 }
 
-
-#cookies:hover::before, #cookies:hover::after {
-    display: block;
-    content: '';
-    position: absolute;
-    width: 50rem;
-    height: 42rem;
-    background-color: #FDA8CF;
-    border-radius: 4rem;
-    z-index: -1;
-    animation: 1s clockwise infinite;
+.item:hover {
+transform: scale(1.1);
+transition: 0.3s;
 }
-@keyframes clockwise {
-    0% {
-      top: -5px;
-      left: 0;
-    }
-    12% {
-      top: -2px;
-      left: 2px;
-    }
-    25% {
-      top: 0;
-      left: 5px;    
-    }
-    37% {
-      top: 2px;
-      left: 2px;
-    }
-    50% {
-      top: 5px;
-      left: 0;    
-    }
-    62% {
-      top: 2px;
-      left: -2px;
-    }
-    75% {
-      top: 0;
-      left: -5px;
-    }
-    87% {
-      top: -2px;
-      left: -2px;
-    }
-    100% {
-      top: -5px;
-      left: 0;    
-    }
-  }
-#cookies:hover:after {
-    background: #F3CE5E;
-    animation: 2s counterclockwise infinite;
-  }
-  @keyframes counterclockwise {
-    0% {
-      top: -5px;
-      right: 0;
-    }
-    12% {
-      top: -2px;
-      right: 2px;
-    }
-    25% {
-      top: 0;
-      right: 5px;    
-    }
-    37% {
-      top: 2px;
-      right: 2px;
-    }
-    50% {
-      top: 5px;
-      right: 0;    
-    }
-    62% {
-      top: 2px;
-      right: -2px;
-    }
-    75% {
-      top: 0;
-      right: -5px;
-    }
-    87% {
-      top: -2px;
-      right: -2px;
-    }
-    100% {
-      top: -5px;
-      right: 0;    
-    }
-  }
+
+.cookies:hover {
+  border: #4f2100;
+}
