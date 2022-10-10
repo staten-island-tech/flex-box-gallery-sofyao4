@@ -7,18 +7,60 @@ html,body,* {
 }
 
 body {
+
     color: #4f2100;
+    background-image: linear-gradient(#DF8B46,#BE5f1b);
 }
 
 .main-header 
 {
-    height: 92%;
-    width: 100%;
-    background-color: #DF8B46;
+    width: 50%;
     text-align: center;
     font-size: 8rem;
-    padding-top: 20rem;
-    background-image: linear-gradient(#DF8B46,#BE5f1b);
+    margin: auto;
+    margin-top: 30rem;
+    margin-bottom: 30vh;
+    animation: header 3s linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes header{
+100%, 0%{
+  color: red;
+}
+8% {
+  color: orangered;
+}
+16% {
+  color: orange;
+}
+25%  {
+  color: yellow;
+}
+33% {
+color: greenyellow;
+}
+41% {
+color: lime;
+}
+50% {
+  color: cyan;
+}
+58% {
+  color: lightskyblue;
+}
+66% {
+  color: blue;
+}
+75% {
+  color:rgb(127, 0, 225);
+}
+83% {
+  color: rgb(225, 0, 255);
+}
+91% {
+  color: rgb(255, 0, 127);
+}
 }
 
 #sub-header {
@@ -36,7 +78,6 @@ h3 {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-color: #BE5f1b;
     flex-direction: row;
 }
 
@@ -57,15 +98,38 @@ img {
     max-height: 42rem;
     margin: 5rem;
     box-shadow: 1rem 1rem #883a19;
-    opacity: 0.9;
-    position: relative;
+    -webkit-transition: 0.7s ease;
+    transition:  0.7s ease;
+}
+img {
+  transition: 1s ease;
 }
 
-.item:hover {
-transform: scale(1.1);
-transition: 0.3s;
+#cookies:hover {
+outline-offset: 1rem;
+outline: 2rem solid #4f2100 ;
 }
 
-.cookies:hover {
-  border: #4f2100;
+#forest:hover {
+  transform: scale(1.1);
 }
+
+#gilmore img{
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+#gilmore:hover img{
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+}
+
+#bicycle:hover {
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+}
+ #lighter:hover {
+  -webkit-transform: rotateZ(-10deg);
+  -ms-transform: rotateZ(-10deg);
+  transform: rotateZ(-10deg);
+ }
+ 
