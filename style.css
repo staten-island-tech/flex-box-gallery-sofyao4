@@ -1,3 +1,8 @@
+// desktop:1200px;
+// laptop:992px;
+// tablet:768px;
+// phone:480px;
+
 html,body,* {
     padding: 0;
     margin: 0;
@@ -12,8 +17,7 @@ body {
     background-image: linear-gradient(#DF8B46,#BE5f1b);
 }
 
-.main-header 
-{
+.main-header {   
     width: 50%;
     text-align: center;
     font-size: 8rem;
@@ -22,6 +26,14 @@ body {
     margin-bottom: 30vh;
     animation: header 3s linear;
     animation-iteration-count: infinite;
+    @media screen and (max-width:480px)
+    {
+        text-align: center;
+        margin-top: 20rem;
+        margin-bottom: 20rem;
+        font-size: 6rem;
+
+    }
 }
 
 @keyframes header{
@@ -79,6 +91,10 @@ h3 {
     justify-content: space-around;
     flex-wrap: wrap;
     flex-direction: row;
+    @media (max-width: 480px) {
+        flex-direction: column;
+        
+    }
 }
 
 img {
