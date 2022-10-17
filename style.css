@@ -13,15 +13,18 @@ body {
     background-image: linear-gradient(#DF8B46,#BE5f1b);
 }
 
-.main-header {   
+h1, h2 {   
     width: 50%;
-    text-align: center;
+    text-align:center;
     font-size: 8rem;
     margin: auto;
-    margin-top: 30rem;
-    margin-bottom: 30vh;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
     animation: header 3s linear;
     animation-iteration-count: infinite;
+}
+h2 {
+  margin-top: 5rem;
 }
 
 @keyframes header{
@@ -64,11 +67,13 @@ color: lime;
 }
 
 #sub-header {
-    padding-top: 2%;
-    size: 10em;
+    padding-top: ;
+    font-size: 6rem;
 } 
 h3 {
-    font-size: 3rem; }
+  text-align: center;
+    font-size: 3rem;
+  margin-bottom: 1rem; }
 
 .contents
 {
@@ -133,26 +138,52 @@ outline: 2rem solid #4f2100 ;
   -ms-transform: rotateZ(-10deg);
   transform: rotateZ(-10deg);
  }
- @media screen and (max-width:768px) {
-  .main-header {
-    text-align: center;
+ @media screen and (max-width:1200px) {
+.item {
+  margin: 3rem;
+}
+ }
+ @media screen and (max-width:992px)  {
 
-    margin: 2rem;
-
+  .item {
+    min-width:29rem ;
+    width:29rem ;
+    max-height:27rem ;
+    height:27rem ;
+    padding-bottom: 27rem ;
+    margin:2rem ;
+    margin-bottom: 5rem;
   }
-
-  
+  img {
+    width: 29rem;
+    height: 27rem;
+  }
+ }
+ @media screen and (max-width:768px) {
+  .item {
+    min-width: 33rem;
+    width: 33rem;
+    max-height: 28rem;
+    height: 28rem;  
+    padding-bottom: 28rem;
+    margin: 2rem;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+  }
+  .contents{
+    margin-top: 5rem;
+  }
+  img{
+    width: 33rem;
+    height: 28rem;
+  }
  }
 
  @media screen and (max-width: 480px) {
-  .main-header  {
-     margin-top: 7rem;
-     margin-bottom: 3rem;
-     font-size: 6rem;
-    }
-    #sub-header {
 
-      font-size: 4rem;
+    #sub-header {
+      font-size: 5rem;
+      margin-top: 1rem;
     }
     h3 {
       font-size: 2rem;
